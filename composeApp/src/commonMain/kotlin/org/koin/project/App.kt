@@ -31,7 +31,6 @@ fun App() {
                         val viewModel = koinViewModel<MyViewModel>()
                         val presenter : Presenter by inject (Presenter::class.java) { parametersOf("Hello World!") }
 
-
                         Text(text = viewModel.getHelloWorld() + presenter.string)
                     }
                 }
